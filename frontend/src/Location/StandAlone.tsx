@@ -7,7 +7,7 @@ function StandAlone() {
     const id = params.id ?? 'default';
     const img = GetImageConfig(id);
     return (
-        <Flex p="md" w="100%" justify="center" align="center" h="100vh">
+        <Flex p="xs" justify="center" align="center">
             <Card withBorder radius="lg">
                 <Card.Section>
                     <Image src={BuildUrl(img.file)} alt={img.file} loading="lazy" mah="100vh" />

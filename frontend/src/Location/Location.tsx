@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { Alert, SimpleGrid, Text } from '@mantine/core';
 import ImageCard from './ImageCard';
 import { GetGroupInfo } from '../data/Groups';
+import { CarouselCard } from './CarouselCard/CarouselCard';
 function Location() {
     const params = useParams();
     const location = params.location ?? 'default';
@@ -17,8 +18,10 @@ function Location() {
                 </Alert>
             )}
             <SimpleGrid p="md" cols={{ base: 1, md: 1, lg: 2 }}>
-                {images.map((id) => {
-                    return <ImageCard key={id} id={id} />;
+                {images.map((item) => {
+                    const { type, id } = item;
+                    if (type === 'image') return <ImageCard key={id} id={id} />;
+                    return <CarouselCard />;
                 })}
             </SimpleGrid>
             <Alert m="md">

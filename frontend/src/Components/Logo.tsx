@@ -5,7 +5,6 @@ function Logo() {
             <Text fw={500} c="blue">
                 Snapshots
             </Text>
-            {/* <SelectLocation /> */}
         </Group>
     );
 }

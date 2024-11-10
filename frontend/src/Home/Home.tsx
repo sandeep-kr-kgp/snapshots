@@ -11,6 +11,9 @@ export default function Home() {
                 This is my journey in pictures — a personal collection of adventures, landscapes,
                 and stories. Join me as I relive the magic of each place I've explored, so far.
             </Text>
+            <Text size="sm" c="dimmed" mt="xl" maw="25rem" ta="center">
+                Note : You can select / change locations from the left menu to view its photos.
+            </Text>
         </Flex>
     );
 }

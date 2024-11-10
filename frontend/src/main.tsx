@@ -12,7 +12,7 @@ const theme = createTheme({
 
 export const ThemedApp = () => {
     return (
-        <MantineProvider theme={theme} classNamesPrefix="DataTab">
+        <MantineProvider theme={theme}>
             <AppRoutes />
         </MantineProvider>
     );

@@ -1,4 +1,4 @@
-import { Card, Group, Image, Text } from '@mantine/core';
+import { Card, Image, Text } from '@mantine/core';
 import BuildUrl from '../Utils/BuildUrl';
 import ImageActions from './ImageActions';
 import { GetImageConfig } from '../data/Images';
@@ -25,17 +25,13 @@ function ImageCard(props: ImageCardProps) {
             <Card.Section>
                 <Image src={BuildUrl(img.file)} alt={img.file} loading="lazy" mah="60vh" />
             </Card.Section>
-            <Group justify="space-between" align="center">
-                <Text
-                    flex={1}
-                    fw={500}
-                    mt="xs"
-                    contentEditable
-                    dangerouslySetInnerHTML={{ __html: img.title ?? 'Untitled' }}
-                    onBlur={(e) => setTitle(e.target.textContent ?? '')}
-                />
-                <ImageActions id={id} onSave={handleSave} />
-            </Group>
+            <Text
+                fw={500}
+                mt="xs"
+                contentEditable
+                dangerouslySetInnerHTML={{ __html: img.title ?? 'Untitled' }}
+                onBlur={(e) => setTitle(e.target.textContent ?? '')}
+            />
             <Text
                 size="sm"
                 c="dimmed"
@@ -45,6 +41,7 @@ function ImageCard(props: ImageCardProps) {
                 }}
                 onBlur={(e) => setDescription(e.target.textContent ?? '')}
             />
+            <ImageActions id={id} onSave={handleSave} />
         </Card>
     );
 }
