@@ -1,13 +1,13 @@
 import groups from '../data/groups.json';
-export interface GroupItem {
+export interface CarouselItem {
     id: string;
-    type: string;
+    images: string[];
 }
 export interface GroupSchema {
     id: string;
     label: string;
     time: string;
-    images: GroupItem[];
+    images: CarouselItem[];
     message?: string;
 }
 export interface GroupsSchema {
@@ -23,8 +23,8 @@ export const GetGroupInfo = (id: string): GroupSchema => {
 //     const json = {};
 //     Object.keys(Groups).forEach((group) => {
 //         let copy = JSON.parse(JSON.stringify(Groups[group]));
-//         copy.images = Groups[group].images.map((e) => ({ id: e, type: 'image' }));
-//         json[group] = copy;
+//         copy.images = Groups[group].images.map((e) => ({ id: e.id, images: [e.id] }));
+//         json[group] = copy.images;
 //     });
 //     console.log(json);
 // }

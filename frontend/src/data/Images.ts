@@ -1,6 +1,6 @@
 import images from '../data/images.json';
-import Groups from './Groups';
-import { GroupItem } from './Groups';
+import group_images from '../data/group_images.json';
+import { CarouselItem } from './Groups';
 export interface ImageSchema {
     parent: string;
     file: string;
@@ -14,13 +14,16 @@ export interface ImagesSchema {
 export interface ImageList extends ImageSchema {
     id: string;
 }
+export interface GroupImagesSchema {
+    [key: string]: CarouselItem[];
+}
 const Images: ImagesSchema = images;
-
+const GroupImages: GroupImagesSchema = group_images;
 export function GetImageConfig(id: string): ImageSchema {
     return Images[id] ?? {};
 }
-export function GetImagesByGroup(parent: string): GroupItem[] {
-    return Groups[parent]?.images ?? [];
+export function GetImagesByGroup(parent: string): CarouselItem[] {
+    return GroupImages[parent] ?? [];
 }
 
 export default Images;

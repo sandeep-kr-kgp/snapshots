@@ -1,10 +1,11 @@
-import { Link } from 'react-router-dom';
 import { ActionIcon, Group, Tooltip } from '@mantine/core';
-import { VscLinkExternal, VscSave, VscTrash, VscEyeClosed } from 'react-icons/vsc';
-import isDev from '../Utils/isDev';
-import { BiRotateLeft } from 'react-icons/bi';
-import classes from './Location.module.css';
 import axios from 'axios';
+import { BiRotateLeft } from 'react-icons/bi';
+import { RiImageAddLine } from 'react-icons/ri';
+import { VscEyeClosed, VscLinkExternal, VscSave, VscTrash } from 'react-icons/vsc';
+import { Link } from 'react-router-dom';
+import isDev from '../Utils/isDev';
+import classes from './Location.module.css';
 interface Props {
     id: string;
     onSave?: () => void;
@@ -19,6 +20,7 @@ function ImageActions(props: Props) {
         axios.get(`/backend/image/rotate/${props.id}`);
     };
     const actions = [
+        { icon: RiImageAddLine, onClick: onSave, label: 'Add image to this caropusel' },
         { icon: VscSave, onClick: onSave, label: 'Save Changes' },
         { icon: BiRotateLeft, onClick: rotate, label: 'Rotate Image' },
         {

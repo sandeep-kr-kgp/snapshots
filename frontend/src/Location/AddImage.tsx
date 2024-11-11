@@ -10,7 +10,6 @@ function AddImage() {
     const [opened, { open, close }] = useDisclosure(false);
     const [selectedFiles, setSelectedFiles] = useState<File[]>();
     const location = params.location;
-    console.log(location);
     if (!isDev) return <></>;
     const handleSubmit = () => {
         const formData = new FormData();
