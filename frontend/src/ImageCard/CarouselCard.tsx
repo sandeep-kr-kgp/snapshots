@@ -10,6 +10,7 @@ export function CarouselCard({ id }: { id: string }) {
     let hasImages = false;
     const slides = images.map((imageId) => {
         hasImages = true;
+        // window.images = window.images ? window.images + 1 : 1;
         return (
             <Carousel.Slide key={imageId}>
                 <ImageCard id={imageId} />
