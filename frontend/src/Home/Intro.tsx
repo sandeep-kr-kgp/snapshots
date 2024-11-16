@@ -1,7 +1,7 @@
 import { Card, Text } from '@mantine/core';
 export default function Intro() {
     return (
-        <Card withBorder radius="md" py="xs" px="sm">
+        <Card withBorder radius="lg" py="xs" px="sm">
             <Text size="md" fw="bold">
                 Hi, my name is Sandeep
             </Text>

@@ -21,7 +21,7 @@ export function CarouselCard({ id }: { id: string }) {
     };
     if (!hasImages) return <></>;
     return (
-        <Card radius="md" withBorder pos="relative">
+        <Card radius="lg" withBorder pos="relative">
             <Card.Section>
                 <Carousel
                     draggable
