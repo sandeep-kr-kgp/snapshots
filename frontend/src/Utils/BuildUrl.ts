@@ -1,3 +1,3 @@
 export default function BuildUrl(filename: string): string {
-    return '/snapshots/images/' + filename;
+    return '/snapshots/images/' + filename + '.webp';
 }

@@ -5,7 +5,6 @@ import { fileURLToPath } from 'url';
 import { Worker } from 'worker_threads';
 import { AddImagesToPost } from './AddImageToPost.js';
 import crud from './crud.js';
-import { nanoid } from 'nanoid';
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -45,7 +44,7 @@ app.post(
     });
     try {
       await Promise.all(conversionPromises); // Wait for all conversions to complete
-      AddImagesToPost(filenames, req.params.group && nanoid());
+      AddImagesToPost(filenames, req.params.group === 'true');
 
       res.send('All files uploaded and converted successfully!');
     } catch {

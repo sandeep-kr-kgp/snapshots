@@ -1,15 +1,13 @@
-import { Button, FileInput, Flex, Modal, Switch } from '@mantine/core';
+import { Affix, Button, FileInput, Flex, Modal, Switch } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import axios from 'axios';
 import { useState } from 'react';
-import { useParams } from 'react-router-dom';
 import isDev from '../Utils/isDev';
 function AddImage() {
-    const params = useParams();
     const [loading, setLoading] = useState(false);
     const [opened, { open, close }] = useDisclosure(false);
+    const [group, { toggle }] = useDisclosure(false);
     const [selectedFiles, setSelectedFiles] = useState<File[]>();
-    const location = params.location;
     if (!isDev) return <></>;
     const handleSubmit = () => {
         const formData = new FormData();
@@ -18,7 +16,7 @@ function AddImage() {
         });
         setLoading(true);
         axios
-            .post(`/backend/upload/${location}`, formData, {
+            .post(`/backend/upload${group ? '/true' : '/false'}`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
@@ -43,7 +41,7 @@ function AddImage() {
                     accept="image/png,image/jpeg, image/webp"
                     onChange={(files) => setSelectedFiles(files)}
                 />
-                <Switch label="Group as carousel" mt="md" />
+                <Switch label="Group as carousel" mt="md" checked={group} onChange={toggle} />
                 <Flex justify="end" mt="xl" gap="md">
                     <Button variant="default" onClick={close} disabled={loading}>
                         Cancel
@@ -54,9 +52,11 @@ function AddImage() {
                 </Flex>
             </Modal>
 
-            <Button size="md" onClick={open}>
-                Add Image
-            </Button>
+            <Affix position={{ bottom: '1vh', left: '40vw' }}>
+                <Button size="md" onClick={open} w="20vw">
+                    Add Image
+                </Button>
+            </Affix>
         </>
     );
 }

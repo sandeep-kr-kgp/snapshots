@@ -1,15 +1,16 @@
 import { Carousel } from '@mantine/carousel';
 import { Badge, Card, Group, Text } from '@mantine/core';
 import { ImageCard } from './ImageCard';
-
-export function CarouselCard() {
-    const images = [1, 2, 3, 4];
+import { GetPost } from '../data/Posts';
+export function CarouselCard({ id }: { id: string }) {
+    const post = GetPost(id);
+    const { images, description, title, location } = post;
     let hasImages = false;
     const slides = images.map((imageId) => {
         hasImages = true;
         return (
             <Carousel.Slide key={imageId}>
-                <ImageCard />
+                <ImageCard id={imageId} />
             </Carousel.Slide>
         );
     });
@@ -26,20 +27,22 @@ export function CarouselCard() {
                     <Text
                         fw={500}
                         contentEditable
-                        dangerouslySetInnerHTML={{ __html: 'Untitled' }}
+                        dangerouslySetInnerHTML={{ __html: title ?? 'Untitled' }}
                         flex={1}
                         truncate
                     />
-                    <Badge size="lg" variant="light" maw="7rem">
-                        Himachal
-                    </Badge>
+                    {location && (
+                        <Badge size="lg" variant="light" maw="7rem">
+                            {location}
+                        </Badge>
+                    )}
                 </Group>
                 <Text
                     size="sm"
                     c="dimmed"
                     contentEditable
                     dangerouslySetInnerHTML={{
-                        __html: 'Description',
+                        __html: description ?? 'Description',
                     }}
                 />
             </Card.Section>
