@@ -3,7 +3,7 @@ import multer from 'multer';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 import { Worker } from 'worker_threads';
-import { AddImagesToPost } from './AddImageToPost.js';
+import { AddImagesToExisting, AddImagesToPost } from './AddImageToPost.js';
 import crud from './crud.js';
 const app = express();
 app.use(express.urlencoded({ extended: true }));
@@ -45,6 +45,27 @@ app.post(
     try {
       await Promise.all(conversionPromises); // Wait for all conversions to complete
       AddImagesToPost(filenames, req.params.group === 'true');
+
+      res.send('All files uploaded and converted successfully!');
+    } catch {
+      res.status(500).send('Error converting files to WebP.');
+    }
+  }
+);
+app.post(
+  '/backend/addToPost/:id',
+  upload.array('images', 10),
+  async (req, res) => {
+    if (!req.files || req.files.length === 0 || !req.params.id) {
+      return res.status(400).send('No files uploaded.');
+    }
+    let filenames = [];
+    const conversionPromises = req.files.map(async (file) => {
+      return runWorker(file.filename).then(() => filenames.push(file.filename));
+    });
+    try {
+      await Promise.all(conversionPromises); // Wait for all conversions to complete
+      AddImagesToExisting(filenames, req.params.id);
 
       res.send('All files uploaded and converted successfully!');
     } catch {

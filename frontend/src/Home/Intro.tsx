@@ -1,14 +1,14 @@
-import { Box, Text } from '@mantine/core';
+import { Card, Text } from '@mantine/core';
 export default function Intro() {
     return (
-        <Box>
+        <Card withBorder radius="md" py="xs" px="sm">
             <Text size="md" fw="bold">
                 Hi, my name is Sandeep
             </Text>
-            <Text>
+            <Text c="dimmed">
                 This is my exploration journey in pictures — a personal collection of adventures,
                 landscapes, and some stories.
             </Text>
-        </Box>
+        </Card>
     );
 }

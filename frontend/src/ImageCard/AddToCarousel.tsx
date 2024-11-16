@@ -1,12 +1,13 @@
-import { Affix, Button, FileInput, Flex, Modal, Switch } from '@mantine/core';
+import { ActionIcon, Button, FileInput, Flex, Modal } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import axios from 'axios';
 import { useState } from 'react';
 import isDev from '../Utils/isDev';
-function AddImage() {
+import { RiImageAddLine } from 'react-icons/ri';
+
+function AddToCarousel({ id }: { id: string }) {
     const [loading, setLoading] = useState(false);
     const [opened, { open, close }] = useDisclosure(false);
-    const [group, { toggle, close: groupFalse }] = useDisclosure(false);
     const [selectedFiles, setSelectedFiles] = useState<File[]>();
     if (!isDev) return <></>;
     const handleSubmit = () => {
@@ -16,7 +17,7 @@ function AddImage() {
         });
         setLoading(true);
         axios
-            .post(`/backend/upload/${group.toString()}`, formData, {
+            .post(`/backend/addToPost/${id}`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
@@ -27,7 +28,6 @@ function AddImage() {
     };
     const reset = () => {
         setSelectedFiles([]);
-        groupFalse();
         close();
     };
     return (
@@ -46,7 +46,6 @@ function AddImage() {
                     accept="image/png,image/jpeg, image/webp"
                     onChange={(files) => setSelectedFiles(files)}
                 />
-                <Switch label="Group as carousel" mt="md" checked={group} onChange={toggle} />
                 <Flex justify="end" mt="xl" gap="md">
                     <Button variant="default" onClick={close} disabled={loading}>
                         Cancel
@@ -57,13 +56,11 @@ function AddImage() {
                 </Flex>
             </Modal>
 
-            <Affix position={{ bottom: '1vh', left: '40vw' }}>
-                <Button size="md" onClick={open} w="20vw">
-                    Add Image
-                </Button>
-            </Affix>
+            <ActionIcon variant="default" size="lg" onClick={open}>
+                <RiImageAddLine size={16} />
+            </ActionIcon>
         </>
     );
 }
 
-export default AddImage;
+export default AddToCarousel;

@@ -9,7 +9,7 @@ export default function Home() {
             <Stack pb="xl" gap="lg">
                 <Intro />
                 {Object.keys(Posts).map((postId) => {
-                    return <CarouselCard id={postId} />;
+                    return <CarouselCard key={postId} id={postId} />;
                 })}
                 <AddImage />
             </Stack>

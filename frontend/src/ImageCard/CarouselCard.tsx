@@ -1,10 +1,9 @@
 import { Carousel } from '@mantine/carousel';
 import { Badge, Card, Group, Text } from '@mantine/core';
-import { ImageCard } from './ImageCard';
+import axios from 'axios';
 import { GetPost } from '../data/Posts';
 import ImageActions from './ImageActions';
-import axios from 'axios';
-import isDev from '../Utils/isDev';
+import { ImageCard } from './ImageCard';
 export function CarouselCard({ id }: { id: string }) {
     const post = GetPost(id);
     const { images, description, title, location } = post;
@@ -22,7 +21,7 @@ export function CarouselCard({ id }: { id: string }) {
     };
     if (!hasImages) return <></>;
     return (
-        <Card radius="md" shadow="xs" pos="relative">
+        <Card radius="md" withBorder pos="relative">
             <Card.Section>
                 <Carousel
                     draggable
@@ -37,31 +36,28 @@ export function CarouselCard({ id }: { id: string }) {
                     <Text
                         fw={500}
                         contentEditable
-                        dangerouslySetInnerHTML={{ __html: title ?? 'Untitled' }}
+                        dangerouslySetInnerHTML={{ __html: title || 'Untitled' }}
                         flex={1}
                         truncate
-                        onBlur={(e) => update('title', e.target.textContent ?? '')}
+                        onBlur={(e) => update('title', e.target.textContent || '')}
                     />
-                    {(location || isDev) && (
-                        <Badge
-                            size="lg"
-                            variant="light"
-                            maw="7rem"
-                            miw="5rem"
+                    <Badge size="lg" variant="light" maw="7rem" miw="5rem">
+                        <Text
                             contentEditable
-                            onBlur={(e) => update('location', e.target.textContent ?? '')}
-                        >
-                            {location}
-                        </Badge>
-                    )}
+                            dangerouslySetInnerHTML={{
+                                __html: location || 'Location',
+                            }}
+                            onBlur={(e) => update('location', e.target.textContent || '')}
+                        />
+                    </Badge>
                 </Group>
                 <Text
                     c="dimmed"
                     contentEditable
                     dangerouslySetInnerHTML={{
-                        __html: description ?? 'Description',
+                        __html: description || 'Description',
                     }}
-                    onBlur={(e) => update('description', e.target.textContent ?? '')}
+                    onBlur={(e) => update('description', e.target.textContent || '')}
                 />
                 <ImageActions id={id} />
             </Card.Section>
