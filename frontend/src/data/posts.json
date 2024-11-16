@@ -323,14 +323,40 @@
         ]
     },
     "qJocoARv8MR0XGNbwN7JW": {
-        "title": "",
-        "description": "",
-        "location": "",
+        "title": "Lil guy",
+        "description": "Alleppey Beach.",
+        "location": "Alleppey",
         "images": [
             "197704c67526165ee6ce88e882503a23",
             "8f58e4c4ec95bc15e5fa3a051b5539d4",
             "5abfddead665c584304ddbf45e6f0a01",
             "6daa45025caf0e9a89b5bc2cefdf85ea"
+        ]
+    },
+    "I2TlRKPyXTIKSh5ykM_nO": {
+        "title": "Beach",
+        "description": "24 hours of rain, no sunrise or sunset but still okay because the beach was just 20 steps away",
+        "location": "Alleppey",
+        "images": [
+            "6d18310a3af395b7ec349e562415bd8b"
+        ]
+    },
+    "N02uLvUaVHeNa19ZhwN8D": {
+        "title": "V for Varkala",
+        "description": "One of a kind experience. Rooftop cafes on a hill, overlooking the sea with the sunset right in front.",
+        "location": "Varkala",
+        "images": [
+            "f2fcd95916ef2383f416efc36fbde7f2",
+            "76a10faa06754dd409d2cfbe6bbc63dd"
+        ]
+    },
+    "pBLROy7oTENZop9BxCm2L": {
+        "title": "Jatayu",
+        "description": "Definitely overhyped.",
+        "location": "Kerala",
+        "images": [
+            "c8b6fd3b2ddd093d64d51ed093eb4459",
+            "e81fa0c60c895e4a03c78a7d9af0fe44"
         ]
     }
 }
