@@ -52,7 +52,7 @@ app.post(
     }
   }
 );
-app.use('/backend/image', crud);
+app.use('/backend/post', crud);
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
