@@ -57,8 +57,8 @@ function AddImage() {
                 </Flex>
             </Modal>
 
-            <Affix position={{ bottom: '1vh', left: '40vw' }}>
-                <Button size="md" onClick={open} w="20vw">
+            <Affix position={{ bottom: '1vh', left: 'calc(50vw - 10rem)' }}>
+                <Button size="md" onClick={open} w="20rem">
                     Add Image
                 </Button>
             </Affix>
