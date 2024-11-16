@@ -5,7 +5,7 @@ sharp.cache(false);
 const router = Router();
 
 function UpdateHelper(cb) {
-  const images = '../frontend/src/data/images.json';
+  const images = '../frontend/src/data/posts.json';
   fs.readFile(images, 'utf8', function readFileCallback(err, text) {
     let data = { ...JSON.parse(text) };
     const newData = cb(data);
@@ -32,14 +32,14 @@ router.get('/rotate/:id', async (req, res) => {
 });
 
 router.post('/update', async (req, res) => {
-  const { id, title, description } = req.body;
+  const { id, title, description, location } = req.body;
   if (!id) {
     res.status(400).send('Id is required');
     return;
   }
   try {
     UpdateHelper((data) => {
-      data[id] = { ...data[id], title, description };
+      data[id] = { ...data[id], title, description, location };
       return data;
     });
     res.json({ success: true });
@@ -57,13 +57,9 @@ router.delete('/:id', async (req, res) => {
   }
   try {
     fs.unlinkSync(`../frontend/public/images/${id}.webp`);
-    UpdateHelper((data) => {
-      delete data[id];
-      return data;
-    });
     res.json({ success: true });
   } catch (error) {
-    console.error('Error fetching view config', error);
+    console.error('Error deleting', error);
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });

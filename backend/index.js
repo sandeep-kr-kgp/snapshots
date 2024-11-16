@@ -3,7 +3,9 @@ import multer from 'multer';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 import { Worker } from 'worker_threads';
+import { AddImagesToPost } from './AddImageToPost.js';
 import crud from './crud.js';
+import { nanoid } from 'nanoid';
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -13,10 +15,10 @@ const __filename = fileURLToPath(import.meta.url); // get the resolved path to t
 const __dirname = dirname(__filename); // get the name of the directory
 const upload = multer({ dest: './images' });
 
-const runWorker = (filename, parent) => {
+const runWorker = (filename) => {
   return new Promise((resolve, reject) => {
     const worker = new Worker(join(__dirname, 'converter.js'), {
-      workerData: { filename, parent },
+      workerData: { filename },
     });
 
     worker.on('message', resolve);
@@ -31,17 +33,20 @@ const runWorker = (filename, parent) => {
 
 // Route to handle file uploads
 app.post(
-  '/backend/upload/:parent',
+  '/backend/upload/:group',
   upload.array('images', 10),
   async (req, res) => {
     if (!req.files || req.files.length === 0) {
       return res.status(400).send('No files uploaded.');
     }
-    const conversionPromises = req.files.map((file) => {
-      return runWorker(file.filename, req.params.parent);
+    let filenames = [];
+    const conversionPromises = req.files.map(async (file) => {
+      return runWorker(file.filename).then(() => filenames.push(file.filename));
     });
     try {
       await Promise.all(conversionPromises); // Wait for all conversions to complete
+      AddImagesToPost(filenames, req.params.group && nanoid());
+
       res.send('All files uploaded and converted successfully!');
     } catch {
       res.status(500).send('Error converting files to WebP.');
