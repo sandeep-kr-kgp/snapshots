@@ -41,7 +41,7 @@ export function CarouselCard({ id }: { id: string }) {
                         truncate
                         onBlur={(e) => update('title', e.target.textContent || '')}
                     />
-                    <Badge size="lg" variant="light" maw="7rem" miw="5rem">
+                    <Badge size="lg" variant="light" maw="12rem" miw="5rem">
                         <Text
                             contentEditable
                             dangerouslySetInnerHTML={{
