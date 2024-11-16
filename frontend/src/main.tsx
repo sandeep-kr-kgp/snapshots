@@ -1,10 +1,11 @@
 import { createTheme, MantineProvider } from '@mantine/core';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import AppRoutes from './AppRoutes.tsx';
 import './index.css';
+import App from './App';
 
 const theme = createTheme({
+    primaryColor: 'yellow',
     fontFamily: `system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
         Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif`,
     scale: 1,
@@ -13,7 +14,7 @@ const theme = createTheme({
 export const ThemedApp = () => {
     return (
         <MantineProvider theme={theme}>
-            <AppRoutes />
+            <App />
         </MantineProvider>
     );
 };

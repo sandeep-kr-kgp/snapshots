@@ -1,19 +1,15 @@
-import { Avatar, Text, Flex } from '@mantine/core';
-import profile from '/profile.webp';
+import { Container, Stack } from '@mantine/core';
+import Intro from './Intro';
+import { ImageCard } from '../ImageCard/ImageCard';
+import { CarouselCard } from '../ImageCard/CarouselCard';
 export default function Home() {
     return (
-        <Flex direction="column" mt="20vh" align="center">
-            <Avatar src={profile} size={200} radius="lg" imageProps={{ loading: 'lazy' }} />
-            <Text size="xl" fw="bold" ta="center" mt="md">
-                Hi, my name is Sandeep
-            </Text>
-            <Text size="md" c="dimmed" ta="center" mt="0.25rem" maw="30rem">
-                This is my journey in pictures — a personal collection of adventures, landscapes,
-                and stories. Join me as I relive the magic of each place I've explored, so far.
-            </Text>
-            <Text size="sm" c="dimmed" mt="xl" maw="25rem" ta="center">
-                Note : You can select / change locations from the left menu to view its photos.
-            </Text>
-        </Flex>
+        <Container p="xs">
+            <Stack pb="xl" gap="lg">
+                <Intro />
+                <ImageCard />
+                <CarouselCard />
+            </Stack>
+        </Container>
     );
 }
