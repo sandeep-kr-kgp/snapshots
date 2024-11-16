@@ -1,5 +1,5 @@
-import { Card, Text } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
+import { Badge, Card, Group, Text } from '@mantine/core';
 import { ImageCard } from './ImageCard';
 
 export function CarouselCard() {
@@ -15,14 +15,25 @@ export function CarouselCard() {
     });
     if (!hasImages) return <></>;
     return (
-        <Card radius="md" shadow="xs">
+        <Card radius="md" shadow="xs" pos="relative">
             <Card.Section>
                 <Carousel draggable withIndicators={Boolean(images.length)}>
                     {slides}
                 </Carousel>
             </Card.Section>
             <Card.Section px="xs" py="sm">
-                <Text fw={500} contentEditable dangerouslySetInnerHTML={{ __html: 'Untitled' }} />
+                <Group justify="space-between" align="center">
+                    <Text
+                        fw={500}
+                        contentEditable
+                        dangerouslySetInnerHTML={{ __html: 'Untitled' }}
+                        flex={1}
+                        truncate
+                    />
+                    <Badge size="lg" variant="light" maw="7rem">
+                        Himachal
+                    </Badge>
+                </Group>
                 <Text
                     size="sm"
                     c="dimmed"

@@ -1,4 +1,4 @@
-import { Button, FileInput, Flex, Modal } from '@mantine/core';
+import { Button, FileInput, Flex, Modal, Switch } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import axios from 'axios';
 import { useState } from 'react';
@@ -43,6 +43,7 @@ function AddImage() {
                     accept="image/png,image/jpeg, image/webp"
                     onChange={(files) => setSelectedFiles(files)}
                 />
+                <Switch label="Group as carousel" mt="md" />
                 <Flex justify="end" mt="xl" gap="md">
                     <Button variant="default" onClick={close} disabled={loading}>
                         Cancel

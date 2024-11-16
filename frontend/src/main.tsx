@@ -5,7 +5,6 @@ import './index.css';
 import App from './App';
 
 const theme = createTheme({
-    primaryColor: 'yellow',
     fontFamily: `system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
         Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif`,
     scale: 1,
