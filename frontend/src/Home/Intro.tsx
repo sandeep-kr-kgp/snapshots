@@ -9,6 +9,7 @@ export default function Intro() {
                 This is my exploration journey in pictures — a personal collection of adventures,
                 landscapes, and some stories.
             </Text>
+            {/* <Text>Total Images : {GetCount()}</Text> */}
         </Card>
     );
 }

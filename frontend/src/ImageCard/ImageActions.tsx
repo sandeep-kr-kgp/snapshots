@@ -2,10 +2,12 @@ import { ActionIcon, Group, Text, Tooltip } from '@mantine/core';
 import axios from 'axios';
 import { VscEyeClosed, VscTrash } from 'react-icons/vsc';
 import AddToCarousel from './AddToCarousel';
+import isDev from '../Utils/isDev';
 interface Props {
     id: string;
 }
 function ImageActions(props: Props) {
+    if (!isDev) return <></>;
     const { id } = props;
     const deleteImage = () => {
         const confirmation = window.confirm('Are you sure you want to delete this photo ?');

@@ -4,6 +4,7 @@ import axios from 'axios';
 import { GetPost } from '../data/Posts';
 import ImageActions from './ImageActions';
 import { ImageCard } from './ImageCard';
+import isDev from '../Utils/isDev';
 export function CarouselCard({ id }: { id: string }) {
     const post = GetPost(id);
     const { images, description, title, location } = post;
@@ -21,6 +22,7 @@ export function CarouselCard({ id }: { id: string }) {
         axios.post('/backend/post/update', { id, location, title, description, [key]: value });
     };
     if (!hasImages) return <></>;
+    const hideDescription = !isDev && !description;
     return (
         <Card radius="lg" withBorder pos="relative">
             <Card.Section>
@@ -52,14 +54,16 @@ export function CarouselCard({ id }: { id: string }) {
                         />
                     </Badge>
                 </Group>
-                <Text
-                    c="dimmed"
-                    contentEditable
-                    dangerouslySetInnerHTML={{
-                        __html: description || 'Description',
-                    }}
-                    onBlur={(e) => update('description', e.target.textContent || '')}
-                />
+                {!hideDescription && (
+                    <Text
+                        c="dimmed"
+                        contentEditable
+                        dangerouslySetInnerHTML={{
+                            __html: description || 'Description',
+                        }}
+                        onBlur={(e) => update('description', e.target.textContent || '')}
+                    />
+                )}
                 <ImageActions id={id} />
             </Card.Section>
         </Card>

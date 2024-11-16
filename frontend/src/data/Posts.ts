@@ -15,4 +15,9 @@ export function GetPost(id: string): PostSchema {
     return Posts[id] ?? {};
 }
 
+export function GetCount(): number {
+    let count = 0;
+    Object.keys(Posts).forEach((id) => (count = count + Posts[id].images.length));
+    return count;
+}
 export default Posts;
