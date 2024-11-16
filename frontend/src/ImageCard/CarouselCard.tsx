@@ -38,26 +38,30 @@ export function CarouselCard({ id }: { id: string }) {
                 <Group justify="space-between" align="center">
                     <Text
                         fw={500}
-                        contentEditable
+                        contentEditable={isDev}
                         dangerouslySetInnerHTML={{ __html: title || 'Untitled' }}
                         flex={1}
                         truncate
                         onBlur={(e) => update('title', e.target.textContent || '')}
                     />
                     <Badge size="lg" variant="light" maw="12rem" miw="5rem">
-                        <Text
-                            contentEditable
-                            dangerouslySetInnerHTML={{
-                                __html: location || 'Location',
-                            }}
-                            onBlur={(e) => update('location', e.target.textContent || '')}
-                        />
+                        {isDev ? (
+                            <Text
+                                contentEditable
+                                dangerouslySetInnerHTML={{
+                                    __html: location || 'Location',
+                                }}
+                                onBlur={(e) => update('location', e.target.textContent || '')}
+                            />
+                        ) : (
+                            location
+                        )}
                     </Badge>
                 </Group>
                 {!hideDescription && (
                     <Text
                         c="dimmed"
-                        contentEditable
+                        contentEditable={isDev}
                         dangerouslySetInnerHTML={{
                             __html: description || 'Description',
                         }}
