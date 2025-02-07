@@ -10,7 +10,7 @@ export default function Intro() {
                 landscapes, and some stories.
             </Text>
             <Text size="sm" c="dimmed">
-                Last updated at : 16 Nov 2024
+                Last updated at : 05 Feb 2025
             </Text>
         </Card>
     );

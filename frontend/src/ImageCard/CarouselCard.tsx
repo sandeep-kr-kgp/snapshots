@@ -7,14 +7,14 @@ import { ImageCard } from './ImageCard';
 import isDev from '../Utils/isDev';
 export function CarouselCard({ id }: { id: string }) {
     const post = GetPost(id);
-    const { images, description, title, location } = post;
+    const { images, description, title, location, objectPosition } = post;
     let hasImages = false;
     const slides = images.map((imageId) => {
         hasImages = true;
         // window.images = window.images ? window.images + 1 : 1;
         return (
             <Carousel.Slide key={imageId}>
-                <ImageCard id={imageId} />
+                <ImageCard id={imageId} objectPosition={objectPosition} />
             </Carousel.Slide>
         );
     });

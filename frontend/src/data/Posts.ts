@@ -4,6 +4,7 @@ export interface PostSchema {
     title?: string;
     description?: string;
     location?: string;
+    objectPosition?: string;
 }
 export interface CarouselsSchema {
     [key: string]: PostSchema;

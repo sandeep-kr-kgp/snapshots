@@ -1,4 +1,74 @@
 {
+    "fhlCacn_VdwbA7H7YmrvM": {
+        "title": "Go crazy",
+        "description": "Funny story, while walking I was putting every step carefully to prevent snow from going inside but because there was snow everywhere, I couldn't keep anything dry. Hence decided to jump in thinking isse jyada ab kya hi geela hoga.",
+        "location": "Rooftop",
+        "images": [
+            "1f56ee75ae7bebee95241b41ffddacfb",
+            "7bb4a2fa6af7ebcadb804aade83f8062",
+            "683b55064ae321af35e114afdfe454f9",
+            "3803eba67ad67de30752267bb7121c06",
+            "1080c7b18c49988dd70bd17fe4a63cfb",
+            "dc8d5bd6f54ef4d8804d469d29397934",
+            "2c1a82e274695e07320b71f6411a3b86",
+            "ed1d1bee779566a27cef19fad000dba3"
+        ]
+    },
+    "ke2lT16m4QDL8JVJomFGA": {
+        "title": "A bit more closer to the china border",
+        "description": "Normally ITBP guys don't allow anyone to go beyond the checkpost except if you're a localite. ",
+        "location": "Dumti Side",
+        "images": ["2413dde8c402e01a621bc806d66740a4", "b1a93635a6f179f3cab99c117df6b5b2"],
+        "objectPosition": "50% 10%"
+    },
+    "PIMGYHtCDNdRDPwDSU2bx": {
+        "title": "Black & White",
+        "description": "... and tiny shades of some other colors",
+        "location": "Zomsa Homestay",
+        "images": ["8a31805ff7dba93cf0db5a616788bda3", "2c13b23093c88b25f487fe4e69f5509b"],
+        "objectPosition": "50% 25%"
+    },
+    "hh4-eyYnCGGmW2Wo-9Uj8": {
+        "title": "Snow covered canopies",
+        "description": "This view can only be seen just after a snowfall because they are the first to melt when sun comes up.",
+        "location": "Chitkul Riverside",
+        "images": ["9a9699edd0e8c9deb3a9e6c07d631e12", "31a0917f88da126a89cb79709a48fa1a"]
+    },
+    "dAB0ulQcAONaWjRHx-QEM": {
+        "title": "Snow snow everywhere",
+        "description": "How can one not fall in love with such a place ?",
+        "location": "Chitkul",
+        "images": [
+            "b6d2516702ab7d8e72b807847ecc3493",
+            "d8d74c839d44dee5effe089689a6de49",
+            "25b7ee11518a03703b44152adfcc5cf1"
+        ]
+    },
+    "lZoMD1zqrh8FW3xcFba6K": {
+        "title": "That Innocence",
+        "description": "",
+        "location": "Chitkul",
+        "images": ["4f98ee48143d67adbead095ff2839022"]
+    },
+    "6aKmEaTzHWvnHP2yJA_FT": {
+        "title": "Same mountain, different colors",
+        "description": "Seperated by a gap of around 6 hours",
+        "location": "Chitkul",
+        "images": ["f05cf28ce9e6388d004216cf73951e4b", "03575256e017b8656f2da073e70da7d3"]
+    },
+    "aDWEzNJPzNlZOOYRw4pie": {
+        "title": "The last light",
+        "description": "Gotta admit, looked way better in real.",
+        "location": "Chitkul",
+        "images": ["0f987e5d937d83e7d06338289180ae84"],
+        "objectPosition": "10% 60%"
+    },
+    "agdD4MI8ZMGNJc7NC0Ei3": {
+        "title": "Nighty night",
+        "description": "Mhara Chitkul Switzerland se kam h ke",
+        "location": "Chitkul",
+        "images": ["abd276534ee29f1cacf1c7100b5a3a15", "3c6bbc19ed440a7bb447c8db531bf75e"]
+    },
     "3IfQJHlFXg8tdRrVW0M0u": {
         "title": "Little moments of pure joy",
         "description": "Curious grandpa experiences live drone footage for the first time.",
@@ -13,10 +83,7 @@
         "title": "Snow capped mountains and blue sky",
         "description": "Btw there's China border behind those mountains",
         "location": "Chitkul",
-        "images": [
-            "2e028a80bdecb38b3c67b677653e3ae9",
-            "3b50315beb47268a44dd477725fa2a50"
-        ]
+        "images": ["2e028a80bdecb38b3c67b677653e3ae9", "3b50315beb47268a44dd477725fa2a50"]
     },
     "HxBeTeUUNV24ZQe7Wr86u": {
         "title": "Tiranga point",
@@ -32,9 +99,7 @@
         "title": "River Front",
         "description": "",
         "location": "Chitkul",
-        "images": [
-            "f3d5e79f4d1843a2170c4aa5fd7da63e"
-        ]
+        "images": ["f3d5e79f4d1843a2170c4aa5fd7da63e"]
     },
     "mGqFP95nxbrbe3eieywPeM": {
         "title": "River Front",
@@ -50,10 +115,7 @@
         "title": "Food storage for cows",
         "description": "This place gets covered in around 6 feet of snow during the winters, hence the need of storing fodder for the cattle.",
         "location": "",
-        "images": [
-            "cce7957b5505cf8af517588740bc207a",
-            "300e614b47e8d765ba94cb5b70a39d8f"
-        ]
+        "images": ["cce7957b5505cf8af517588740bc207a", "300e614b47e8d765ba94cb5b70a39d8f"]
     },
     "zU9UtwwXFxqLy06Aim1xn": {
         "title": "Not a drone shot",
@@ -83,9 +145,7 @@
         "title": "Zomsa homestay's rooftop",
         "description": "Morning at around 8AM.",
         "location": "Chitkul",
-        "images": [
-            "1e7ac6ab537a11749d9f33daa1781f21"
-        ]
+        "images": ["1e7ac6ab537a11749d9f33daa1781f21"]
     },
     "QSx-t-S9qkAWcA3-to20A": {
         "title": "Strolling",
@@ -111,66 +171,49 @@
         "title": "Govt School",
         "description": "Gotta admit, if I had to go to a school like this while growing up, I would've topped every class. LoL.",
         "location": "Chitkul",
-        "images": [
-            "388dc9216a870c9ad2fae1ea72b8568b"
-        ]
+        "images": ["388dc9216a870c9ad2fae1ea72b8568b"]
     },
     "-O2CG-_ihtkyT1R1ZFbi0": {
         "title": "😁",
         "description": "LoL",
         "location": "Chitkul",
-        "images": [
-            "b05e51a5938e1ceb4989affe61ca332b"
-        ]
+        "images": ["b05e51a5938e1ceb4989affe61ca332b"]
     },
     "Q3XJatNMENt6Zy4yDN_ZR": {
         "title": "This is a sunrise",
         "description": "When you wake up early morning around 5:30AM and you get to see the crescent moon during the sunrise.",
         "location": "Chitkul",
-        "images": [
-            "9b4cfb2302fdaa56b3ad9fb14c2417a8"
-        ]
+        "images": ["9b4cfb2302fdaa56b3ad9fb14c2417a8"]
     },
     "Fd8D8b_-8HmniFkT7MrqJ": {
         "title": "Galaxy far far away",
         "description": "",
         "location": "Chitkul",
-        "images": [
-            "65586d907690f042532de97252795542"
-        ]
+        "images": ["65586d907690f042532de97252795542"]
     },
     "PmV-OhOee3YJzNZshH_1l": {
         "title": "Sunset",
         "description": "",
         "location": "Chitkul",
-        "images": [
-            "f42d847b6daa54ab3884699e8648c76e"
-        ]
+        "images": ["f42d847b6daa54ab3884699e8648c76e"]
     },
     "aGNs_XxWTkEOKsVs7LqLW": {
         "title": "Kalpa and its apple orchards",
         "description": "More than 50% of the trees that you see in this photos are of apple",
         "location": "Kalpa",
-        "images": [
-            "5e15ee8d7f1e5d1a6c3395a7a7a66336"
-        ]
+        "images": ["5e15ee8d7f1e5d1a6c3395a7a7a66336"]
     },
     "LqqcOgf9AarR7awix_Pbq": {
         "title": "All Smiles",
         "description": "🙂",
         "location": "Kalpa",
-        "images": [
-            "6ec57b953432ac3d73ca237156f13488"
-        ]
+        "images": ["6ec57b953432ac3d73ca237156f13488"]
     },
     "uXLz1YIGVZ2ieSpNMG4G-": {
         "title": "Kalpa Fort",
         "description": "Best place to experience sunset.",
         "location": "Kalpa",
-        "images": [
-            "988f5b00d816ad05b0dfb453bfbaef7c",
-            "1e0e4ed21c3fec43092ff16959cd94c1"
-        ]
+        "images": ["988f5b00d816ad05b0dfb453bfbaef7c", "1e0e4ed21c3fec43092ff16959cd94c1"]
     },
     "aaTjjv_jaoFv6G3o8BZzI": {
         "title": "kinnaur Kailash",
@@ -200,18 +243,13 @@
         "title": "The deadly mountains of Kinnaur",
         "description": "Of all the places I've been to, these are the scary mountains. Completely vertical and there's stones falling from the top all year round.",
         "location": "Roghi",
-        "images": [
-            "2ff9259d4085faef3821990b126d942d",
-            "f8ddb1d1222a16de2808d69309c831e8"
-        ]
+        "images": ["2ff9259d4085faef3821990b126d942d", "f8ddb1d1222a16de2808d69309c831e8"]
     },
     "CHTo_vFKxU5oASkRofQNX": {
         "title": "And then there's this good boy",
         "description": "",
         "location": "Roghi",
-        "images": [
-            "0d89e2d04b6e28e24e77785689f06d71"
-        ]
+        "images": ["0d89e2d04b6e28e24e77785689f06d71"]
     },
     "EPwPou2BC08NkzGj6BvYE": {
         "title": "U19 sports meet",
@@ -227,10 +265,7 @@
         "title": "Sunset over the Kinnaur Kailash",
         "description": "",
         "location": "Kalpa",
-        "images": [
-            "27d911840d0328eae8d6ead0d7863940",
-            "695f3dfeb73e5f6a0d578284813ed3ca"
-        ]
+        "images": ["27d911840d0328eae8d6ead0d7863940", "695f3dfeb73e5f6a0d578284813ed3ca"]
     },
     "91gFZP9gL8u9gsofoc1VS": {
         "title": "Through the clouds",
@@ -248,34 +283,25 @@
         "title": "Fancy some tea, eh ?",
         "description": "Cold winter, wooden furnace and tea.",
         "location": "Billing",
-        "images": [
-            "8b170927a622ea7d3bc53acfa2c95bbf"
-        ]
+        "images": ["8b170927a622ea7d3bc53acfa2c95bbf"]
     },
     "vCQK2XwKkmqHSQjDu_E5J": {
         "title": "Welcome to new adventures",
         "description": "",
         "location": "Bangru",
-        "images": [
-            "2b79f64440f9491af39f972c8c6d9daf"
-        ]
+        "images": ["2b79f64440f9491af39f972c8c6d9daf"]
     },
     "_nvEv5ggKU7Vs8jALVFfm": {
         "title": "Zostel",
         "description": "",
         "location": "Rajgundha",
-        "images": [
-            "f94c04afd2765cc94967ed4f96dfa091",
-            "c3f25bcd883fa9e805fdaa647b7b532f"
-        ]
+        "images": ["f94c04afd2765cc94967ed4f96dfa091", "c3f25bcd883fa9e805fdaa647b7b532f"]
     },
     "ptP6lUQE2j4s5ix5j6AOD": {
         "title": "The symmetry and the precision",
         "description": "Sherabling Monastery",
         "location": "Bir",
-        "images": [
-            "df111b071ab21109593be1f33aad6663"
-        ]
+        "images": ["df111b071ab21109593be1f33aad6663"]
     },
     "JkFhRbE7Z565p01_zoijJ": {
         "title": "I may or may not be drunk in these",
@@ -301,26 +327,19 @@
         "title": "Stick",
         "description": "So who got the stick in the end ? Well some mysteries remain mystery till the end.",
         "location": "Goa",
-        "images": [
-            "b4f85525606d73441aa3dd439e3a615c"
-        ]
+        "images": ["b4f85525606d73441aa3dd439e3a615c"]
     },
     "4id9VIV9xuXADqdyMTlMJ": {
         "title": "Tea",
         "description": "With the tea gardens in the backdrop",
         "location": "Munnar",
-        "images": [
-            "6532023c6dfa8dae10bc1695ed0ce710"
-        ]
+        "images": ["6532023c6dfa8dae10bc1695ed0ce710"]
     },
     "71qNmEAAaMFEYOHSD6M8M": {
         "title": "Houseboats",
         "description": "Alleppey backwaters.",
         "location": "Alleppey",
-        "images": [
-            "bd69ad3bce8f7a4e9853b0308b4f176a",
-            "a7d105eb81f1c6a7db4cab1a39db4041"
-        ]
+        "images": ["bd69ad3bce8f7a4e9853b0308b4f176a", "a7d105eb81f1c6a7db4cab1a39db4041"]
     },
     "qJocoARv8MR0XGNbwN7JW": {
         "title": "Lil guy",
@@ -337,103 +356,73 @@
         "title": "Beach",
         "description": "24 hours of rain, no sunrise or sunset but still okay because the beach was just 20 steps away",
         "location": "Alleppey",
-        "images": [
-            "6d18310a3af395b7ec349e562415bd8b"
-        ]
+        "images": ["6d18310a3af395b7ec349e562415bd8b"]
     },
     "N02uLvUaVHeNa19ZhwN8D": {
         "title": "V for Varkala",
         "description": "One of a kind experience. Rooftop cafes on a hill, overlooking the sea with the sunset right in front.",
         "location": "Varkala",
-        "images": [
-            "f2fcd95916ef2383f416efc36fbde7f2",
-            "76a10faa06754dd409d2cfbe6bbc63dd"
-        ]
+        "images": ["f2fcd95916ef2383f416efc36fbde7f2", "76a10faa06754dd409d2cfbe6bbc63dd"]
     },
     "pBLROy7oTENZop9BxCm2L": {
         "title": "Jatayu",
         "description": "Definitely overhyped.",
         "location": "Kerala",
-        "images": [
-            "c8b6fd3b2ddd093d64d51ed093eb4459",
-            "e81fa0c60c895e4a03c78a7d9af0fe44"
-        ]
+        "images": ["c8b6fd3b2ddd093d64d51ed093eb4459", "e81fa0c60c895e4a03c78a7d9af0fe44"]
     },
     "wI9ascqaqrHYHMOb9akzM": {
         "title": "Paragliding",
         "description": "Not gonna lie, I was a bit scared in the first half",
         "location": "Bir",
-        "images": [
-            "b40aeead48b7ddaa05422b3a75479450"
-        ]
+        "images": ["b40aeead48b7ddaa05422b3a75479450"]
     },
     "jJpqpipdsOszU-uL7uR7R": {
         "title": "Yup, that's me",
         "description": "There's this thing about adventure, you're scared in the beginning but once you take that first step, you end up loving it.",
         "location": "Bir",
-        "images": [
-            "4fdc020f6edeffe5a742b4e6c10c364c"
-        ]
+        "images": ["4fdc020f6edeffe5a742b4e6c10c364c"]
     },
     "0a21606xlLXUtkTW7GFvR": {
         "title": "Nyingma Monastery",
         "description": "With paragliders in the sky flying above it",
         "location": "Bir",
-        "images": [
-            "912056b7bae1ca05bc485f827aa66de0",
-            "da2f55bef7fa5a28ba5477a33fbab6d2"
-        ]
+        "images": ["912056b7bae1ca05bc485f827aa66de0", "da2f55bef7fa5a28ba5477a33fbab6d2"]
     },
     "oVPjIGGi9Rm605VzazPpw": {
         "title": "Kheerganga",
         "description": "A trek of around 14Kms near Tosh",
         "location": "Kheerganga",
-        "images": [
-            "56b66e7559fc4006ea930e8f2ae26348",
-            "119ac5663084ab370cf5d5604f09c337"
-        ]
+        "images": ["56b66e7559fc4006ea930e8f2ae26348", "119ac5663084ab370cf5d5604f09c337"]
     },
     "_CNu0JKDFhcxLHL7r0Dyh": {
         "title": "Early sunrise",
         "description": "When the first rays hit the snow.",
         "location": "Tosh",
-        "images": [
-            "71a8210a60f4d7e399c72d6b0df99db9"
-        ]
+        "images": ["71a8210a60f4d7e399c72d6b0df99db9"]
     },
     "edI6y_7BQhKcjOuxumE3C": {
         "title": "Snow, snow, everywhere",
         "description": "Some 30Kms away from Manali",
         "location": "Khoksar",
-        "images": [
-            "cb6f9bb0c1cb5453117515a2722a121c"
-        ]
+        "images": ["cb6f9bb0c1cb5453117515a2722a121c"]
     },
     "1QnsL1JkiHeIYuue9pJwl": {
         "title": "🤓",
         "description": "",
         "location": "Khoksar",
-        "images": [
-            "77f874cc6fcd8b0cd9d3673154159d5e",
-            "53abe1fcae724bce85694c085c694618"
-        ]
+        "images": ["77f874cc6fcd8b0cd9d3673154159d5e", "53abe1fcae724bce85694c085c694618"]
     },
     "Jye3O1KLP5I133BKLyZUQ": {
         "title": "River stream",
         "description": "...alongside snow covered mountains, what else one needs ?",
         "location": "Sissu",
-        "images": [
-            "f1996f26cad59ded0dc60c11435865ae"
-        ]
+        "images": ["f1996f26cad59ded0dc60c11435865ae"]
     },
     "CFH67FIUVvIjSkCPo0Fer": {
         "title": "Hey, look over there",
         "description": "And he finally did",
         "location": "Gulaba",
-        "images": [
-            "09f2e05055ee47f50b16ab3b4737d8e3",
-            "2b11dc8be96bc8c7b129bf6b7e1328ac"
-        ]
+        "images": ["09f2e05055ee47f50b16ab3b4737d8e3", "2b11dc8be96bc8c7b129bf6b7e1328ac"]
     },
     "Nn2oILnT9F60kSGcTjl9m": {
         "title": "Well, tried trying some new poses",
@@ -450,74 +439,55 @@
         "title": "Golden sunset",
         "description": "Sam sand dunes",
         "location": "Jaisalmer",
-        "images": [
-            "e8054d35f755c6044c93680b747c98e1",
-            "d6ccf2ca56a52848e03c2556ce71f71e"
-        ]
+        "images": ["e8054d35f755c6044c93680b747c98e1", "d6ccf2ca56a52848e03c2556ce71f71e"]
     },
     "zULtI784-mhGaPxsllWyf": {
         "title": "Desert camps",
         "description": "Funny thing, all of the tents other than mine were packed by atleast 6-7 people. Jaisalmer is definitely not for solo travelers.",
         "location": "Sam",
-        "images": [
-            "30d34ad52721dc5aa6492e0e0ec53e77"
-        ]
+        "images": ["30d34ad52721dc5aa6492e0e0ec53e77"]
     },
     "nW6w6Kl55Ttzv0MI49rYf": {
         "title": "Railway Overbridge",
         "description": "",
         "location": "Unknown",
-        "images": [
-            "ae570ebc7ae0d5aa13053595ce3154c1"
-        ]
+        "images": ["ae570ebc7ae0d5aa13053595ce3154c1"]
     },
     "4Cr3_bbqOu74n7ogW4j54": {
         "title": "Gyuto Monastery",
         "description": "",
         "location": "Dharamshala",
-        "images": [
-            "060a7edd414ab0088bf519835b4a80b7"
-        ]
+        "images": ["060a7edd414ab0088bf519835b4a80b7"]
     },
     "EnDDWEHUYrGFoG9RcWWlA": {
         "title": "Israeli Cafe",
         "description": "This was the first time I experience such kind of cafe. Small tables, seating arrangements on the ground and a tent made out of thick cloth. Amazing vibe, awesome ambience.",
         "location": "Dharamshala",
-        "images": [
-            "73a013df84a2dbd1b593fddd045f1a13"
-        ]
+        "images": ["73a013df84a2dbd1b593fddd045f1a13"]
     },
     "Zunr68Nn4DyXr4KyNBR2Y": {
         "title": "Snow and River",
         "description": "",
         "location": "Khoksar",
-        "images": [
-            "0fe7a8b29e3c44ba1151c12d18b0fe18"
-        ]
+        "images": ["0fe7a8b29e3c44ba1151c12d18b0fe18"]
     },
     "jGN27CCDa3cHVFmAklq1y": {
         "title": "First time I ever saw snow",
         "description": "No matter how old you are, you see snow you play in it, that's the rule.",
         "location": "Khoksar",
-        "images": [
-            "61f2b594963a714a1c8dfebbad1a6dc5"
-        ]
+        "images": ["61f2b594963a714a1c8dfebbad1a6dc5"]
     },
     "TiYa81LIG3av_aHSEUfuV": {
-        "title": "Nani Lake",
+        "title": "Naini Lake",
         "description": "Awesome boating experience",
         "location": "Nainital",
-        "images": [
-            "c48e130617fa20504e62de134c395836"
-        ]
+        "images": ["c48e130617fa20504e62de134c395836"]
     },
     "NKxaAru7Vur0RKkPghQ1d": {
         "title": "Mountains behind mountains",
         "description": "Some 45Km drive from Mussoorie",
         "location": "Dhanaulti",
-        "images": [
-            "ed635425035fb83d82deb68f30a3faa8"
-        ]
+        "images": ["ed635425035fb83d82deb68f30a3faa8"]
     },
     "q09qPHiG-PkRdBG2ptXFo": {
         "title": "Paradise Beach",
@@ -534,32 +504,24 @@
         "title": "On the banks of Ganga river",
         "description": "",
         "location": "Rishikesh",
-        "images": [
-            "5843a27b90ec1c55f1d38f366c7204a6"
-        ]
+        "images": ["5843a27b90ec1c55f1d38f366c7204a6"]
     },
     "Qe73PIE-ivAxWgN3-HAW2": {
         "title": "Look into the eyes",
         "description": "",
         "location": "Rishikesh",
-        "images": [
-            "f6b32163e6d73b8e8e15ea82dedfc65a"
-        ]
+        "images": ["f6b32163e6d73b8e8e15ea82dedfc65a"]
     },
     "85kJZi4N7PI38QdQUcEPm": {
         "title": "Beatles Ashram",
         "description": "",
         "location": "Rishikesh",
-        "images": [
-            "f066ebbe0dc060b395de539474b927ac"
-        ]
+        "images": ["f066ebbe0dc060b395de539474b927ac"]
     },
     "JJaoSvW6FosaonSwDAWvO": {
         "title": "If it rains, stop and chill.",
         "description": "",
         "location": "Rishikesh",
-        "images": [
-            "808192418870c5e2be871c64f8eba5ee"
-        ]
+        "images": ["808192418870c5e2be871c64f8eba5ee"]
     }
 }
