@@ -6,20 +6,30 @@ export function AddImagesToPost(filenames, group) {
     let data = { ...JSON.parse(text) };
 
     if (group) {
-      data[nanoid()] = {
-        title: '',
-        description: '',
-        location: '',
-        images: filenames,
-      };
+      data = Object.assign(
+        {
+          [nanoid()]: {
+            title: '',
+            description: '',
+            location: '',
+            images: filenames,
+          },
+        },
+        data
+      );
     } else {
       filenames.forEach((f) => {
-        data[nanoid()] = {
-          title: '',
-          description: '',
-          location: '',
-          images: [f],
-        };
+        data = Object.assign(
+          {
+            [nanoid()]: {
+              title: '',
+              description: '',
+              location: '',
+              images: [f],
+            },
+          },
+          data
+        );
       });
     }
     fs.writeFileSync(posts, JSON.stringify(data, null, 4));
