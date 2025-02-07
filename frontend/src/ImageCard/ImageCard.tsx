@@ -14,7 +14,7 @@ export function ImageCard({ id, objectPosition }: { id: string; objectPosition?:
     console.log(loaded);
     return (
         <>
-            {!loaded && <Skeleton h="40vh" />}
+            {!loaded && <Skeleton h="50" />}
             <Image
                 style={{ opacity: loaded ? 1 : 0, objectPosition: objectPosition }}
                 src={BuildUrl(id)}
