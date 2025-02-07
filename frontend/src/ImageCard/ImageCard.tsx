@@ -1,10 +1,10 @@
-import { ActionIcon, Image, Skeleton } from '@mantine/core';
-import BuildUrl from '../Utils/BuildUrl';
-import { BiRotateLeft } from 'react-icons/bi';
-import classes from './Styles.module.css';
+import { ActionIcon, Image } from '@mantine/core';
 import axios from 'axios';
-import isDev from '../Utils/isDev';
 import { useState } from 'react';
+import { BiRotateLeft } from 'react-icons/bi';
+import BuildUrl from '../Utils/BuildUrl';
+import isDev from '../Utils/isDev';
+import classes from './Styles.module.css';
 
 export function ImageCard({ id, objectPosition }: { id: string; objectPosition?: string }) {
     const [loaded, setLoaded] = useState(false);
@@ -14,7 +14,6 @@ export function ImageCard({ id, objectPosition }: { id: string; objectPosition?:
     console.log(loaded);
     return (
         <>
-            {!loaded && <Skeleton h="50" />}
             <Image
                 style={{ opacity: loaded ? 1 : 0, objectPosition: objectPosition }}
                 src={BuildUrl(id)}
