@@ -76,7 +76,6 @@
         "location": "Chitkul",
         "images": [
             "251c3b3e14782f3b167b183823e3b87a",
-            "c2f2c65bd2146ad32047c79b0bb4ac64",
             "3df7ace28bd7621af4dfdfba2bcd8d46"
         ]
     },
@@ -126,12 +125,7 @@
             "1277211bd9ecbf18af6c190a88f99df9"
         ]
     },
-    "GXijf-QmBV0JXIc36wsN8": {
-        "title": "Zomsa homestay's rooftop",
-        "description": "Morning at around 8AM.",
-        "location": "Chitkul",
-        "images": ["1e7ac6ab537a11749d9f33daa1781f21"]
-    },
+    
     "QSx-t-S9qkAWcA3-to20A": {
         "title": "Strolling",
         "description": "One benefit of going to places during off-season is that there's no one else in the sight. Just you, the nature and the peace.",
@@ -219,7 +213,6 @@
         "images": [
             "18cbf64bdbb67421f1ac5873e19a44d7",
             "75d5f6da0b578c8d4f51986aaefd113d",
-            "1e77cdc63e2380ec21e87a7f4cb51857",
             "3c2589bedf47ee9539d2fa6d1af0487f",
             "c58c0550e69a646971b4cf5a5f9bf902"
         ]
@@ -294,8 +287,7 @@
         "location": "Goa",
         "images": [
             "fd3cbf226ff4a6264f39ecac0c3a01f8",
-            "3283014787a08183d6b58a55a4426075",
-            "a70f0efe06d667c41f107e1bb18a6e41"
+            "3283014787a08183d6b58a55a4426075"
         ]
     },
     "j7Xq7zKAcgQ7dM9ZjB-Dq": {
@@ -377,7 +369,7 @@
         "title": "Kheerganga",
         "description": "A trek of around 14Kms near Tosh",
         "location": "Kheerganga",
-        "images": ["56b66e7559fc4006ea930e8f2ae26348", "119ac5663084ab370cf5d5604f09c337"]
+        "images": [ "119ac5663084ab370cf5d5604f09c337"]
     },
     "_CNu0JKDFhcxLHL7r0Dyh": {
         "title": "Early sunrise",
@@ -385,12 +377,7 @@
         "location": "Tosh",
         "images": ["71a8210a60f4d7e399c72d6b0df99db9"]
     },
-    "edI6y_7BQhKcjOuxumE3C": {
-        "title": "Snow, snow, everywhere",
-        "description": "Some 30Kms away from Manali",
-        "location": "Khoksar",
-        "images": ["cb6f9bb0c1cb5453117515a2722a121c"]
-    },
+   
     "1QnsL1JkiHeIYuue9pJwl": {
         "title": "🤓",
         "description": "",
@@ -409,29 +396,14 @@
         "location": "Gulaba",
         "images": ["09f2e05055ee47f50b16ab3b4737d8e3", "2b11dc8be96bc8c7b129bf6b7e1328ac"]
     },
-    "Nn2oILnT9F60kSGcTjl9m": {
-        "title": "Well, tried trying some new poses",
-        "description": "LoL",
-        "location": "Gulaba",
-        "images": [
-            "a592661120b2205accc6f2a8872cb870",
-            "5b2541266fb426edbda6697e0e8f4b1d",
-            "aaad5b2de173827676aa9e9c56845263",
-            "a239040118bd8a067ae43da0f10c379b"
-        ]
-    },
+    
     "WOcU1GSMCF617KjsJWmO6": {
         "title": "Golden sunset",
         "description": "Sam sand dunes",
         "location": "Jaisalmer",
         "images": ["e8054d35f755c6044c93680b747c98e1", "d6ccf2ca56a52848e03c2556ce71f71e"]
     },
-    "zULtI784-mhGaPxsllWyf": {
-        "title": "Desert camps",
-        "description": "Funny thing, all of the tents other than mine were packed by atleast 6-7 people. Jaisalmer is definitely not for solo travelers.",
-        "location": "Sam",
-        "images": ["30d34ad52721dc5aa6492e0e0ec53e77"]
-    },
+    
     "nW6w6Kl55Ttzv0MI49rYf": {
         "title": "Railway Overbridge",
         "description": "",
@@ -456,12 +428,7 @@
         "location": "Khoksar",
         "images": ["0fe7a8b29e3c44ba1151c12d18b0fe18"]
     },
-    "jGN27CCDa3cHVFmAklq1y": {
-        "title": "First time I ever saw snow",
-        "description": "No matter how old you are, you see snow you play in it, that's the rule.",
-        "location": "Khoksar",
-        "images": ["61f2b594963a714a1c8dfebbad1a6dc5"]
-    },
+    
     "TiYa81LIG3av_aHSEUfuV": {
         "title": "Naini Lake",
         "description": "Awesome boating experience",
@@ -474,17 +441,7 @@
         "location": "Dhanaulti",
         "images": ["ed635425035fb83d82deb68f30a3faa8"]
     },
-    "q09qPHiG-PkRdBG2ptXFo": {
-        "title": "Paradise Beach",
-        "description": "Amazing views, humid (read bad) weather",
-        "location": "pondicherry",
-        "images": [
-            "21ff6b82bc154f5c5a932fd8ca2a245d",
-            "274e2b0d76b2f9ea5a79c328e704bf7b",
-            "439d8de91a8b20d30c80367c04713726",
-            "9196d316b8a08f13b40a6f0a8f35da69"
-        ]
-    },
+    
     "YZtFwErAz2VM9cNdAB9o1": {
         "title": "On the banks of Ganga river",
         "description": "",
@@ -496,12 +453,6 @@
         "description": "",
         "location": "Rishikesh",
         "images": ["f6b32163e6d73b8e8e15ea82dedfc65a"]
-    },
-    "85kJZi4N7PI38QdQUcEPm": {
-        "title": "Beatles Ashram",
-        "description": "",
-        "location": "Rishikesh",
-        "images": ["f066ebbe0dc060b395de539474b927ac"]
     },
     "JJaoSvW6FosaonSwDAWvO": {
         "title": "If it rains, stop and chill.",
